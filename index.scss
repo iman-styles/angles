@@ -1,0 +1,71 @@
+.angles-container {
+  overflow-x: hidden;
+}
+
+.angles {
+  position: relative;
+  &:before,
+  &:after {
+    z-index: 1;
+    border-style: solid;
+    position : absolute;
+    left: 50%;
+    margin-left: -2000px;
+  }
+}
+
+.angles__content {
+  z-index: 2;
+  position: relative;
+}
+
+.angles--hospital {
+  background: #0088cc;
+  &:before {
+    display: block;
+    content: "";
+    top: -100px;
+    border-width: 100px 4000px 100px 0;
+    border-color: transparent #1a94d1 transparent transparent;
+  }
+  &:after {
+    display: block;
+    content: "";
+    bottom: -150px;
+    border-width: 200px 4000px 200px 0;
+    border-color: transparent #1a94d1 transparent transparent;
+  }
+}
+
+.angles--extras {
+  background: #45428d;
+  &:before {
+    display: block;
+    content: "";
+    top: -100px;
+    border-width: 100px 4000px 100px 0;
+    border-color: transparent #585599 transparent transparent;
+  }
+}
+
+.angles--info {
+  background: #70c51d;
+  &:before {
+    display: block;
+    content: "";
+    top: -50px;
+    border-width: 50px 4000px 50px 0;
+    border-color: transparent #7fcb34 transparent transparent;
+  }
+}
+
+.angles--callout {
+
+  &:before {
+    display: block;
+    content: "";
+    bottom: -20px;
+    border-width: 100px 4000px 0 0;
+    border-color: transparent #fff transparent transparent;
+  }
+}
