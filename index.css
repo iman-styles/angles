@@ -15,15 +15,6 @@
   margin-left: -2000px;
 }
 
-// Hide psuedo angles from firefox and its adds a distorted blur
-//
-// @-moz-document url-prefix() {
-//    .angles:before,
-//    .angles:after {
-//     display: none !important;
-//    }
-// }
-
 .angles__content {
   z-index: 2;
   position: relative;
